@@ -10,9 +10,9 @@ Package messageplexer is the part responsible for messages delivering on Cherry.
 package messageplexer
 
 import (
+	"cherry/src/pkg/config"
+	"cherry/src/pkg/html"
 	"net"
-	"pkg/config"
-	"pkg/html"
 	"runtime"
 )
 

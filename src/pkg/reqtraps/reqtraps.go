@@ -10,11 +10,11 @@ Package reqtraps implements the traps that handle each relevant HTTP method.
 package reqtraps
 
 import (
+	"cherry/src/pkg/config"
+	"cherry/src/pkg/html"
+	"cherry/src/pkg/rawhttp"
 	"net"
 	"os"
-	"pkg/config"
-	"pkg/html"
-	"pkg/rawhttp"
 	"strings"
 )
 

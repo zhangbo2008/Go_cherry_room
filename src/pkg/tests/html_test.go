@@ -8,10 +8,10 @@
 package cherry_test
 
 import (
+	"cherry/src/pkg/config"
+	"cherry/src/pkg/config/parser"
+	"cherry/src/pkg/html"
 	"os"
-	"pkg/config"
-	"pkg/config/parser"
-	"pkg/html"
 	"testing"
 )
 

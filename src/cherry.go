@@ -10,16 +10,16 @@ Package main.
 package main
 
 import (
+	"cherry/src/pkg/config"
+	"cherry/src/pkg/config/parser"
+	"cherry/src/pkg/html"
+	"cherry/src/pkg/messageplexer"
+	"cherry/src/pkg/reqtraps"
 	"crypto/tls"
 	"fmt"
 	"net"
 	"os"
 	"os/signal"
-	"pkg/config"
-	"pkg/config/parser"
-	"pkg/html"
-	"pkg/messageplexer"
-	"pkg/reqtraps"
 	"strconv"
 	"strings"
 	"syscall"
@@ -142,7 +142,7 @@ func main() {
 		offerHelp()
 		os.Exit(0)
 	}
-	configPath := getOption("config", "")
+	configPath := getOption("config", "sample.cherry")
 	if len(configPath) == 0 {
 		offerHelp()
 		os.Exit(1)

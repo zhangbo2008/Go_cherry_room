@@ -8,9 +8,9 @@
 package parser
 
 import (
+	"cherry/src/pkg/config"
 	"fmt"
 	"os"
-	"pkg/config"
 	"testing"
 )
 
